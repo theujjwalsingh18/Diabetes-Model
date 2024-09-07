@@ -169,7 +169,13 @@ input{
  }
  .popup button{
   margin-top: 15px;
-
  }
+ #linkedIn,
+#insta,
+#github,
+#teli {
+  font-size: 35px;
+}
+
 
 }
