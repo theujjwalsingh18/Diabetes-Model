@@ -164,8 +164,8 @@ input{
 
 @media only screen and (max-width: 600px) {
  .predict{
-  height: 30vh;
-  width: 50vw;
+  height: 50vh;
+  width: 75vw;
  }
 
 }
