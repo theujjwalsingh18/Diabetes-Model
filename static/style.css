@@ -81,11 +81,11 @@ input{
     font-size: 50px;
   background-color: #18191f;
   color: #fff;
-  box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
-    2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
-    inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
-    inset 2px 2px 10px #00000080;
-  border-radius: 20px;
+  box-shadow: 2px 2px 2px #00000080, 2px 1px 2px #00000080,
+    2px 2px 2px #00000080, 2px 2px 3px #00000080, inset 2px 2px 2px #00000080,
+    inset 2px 2px 2px #00000080, inset 2px 2px 2px #00000080,
+    inset 2px 2px 2px #00000080;
+  border-radius: 100px;
   animation: animate 5s linear infinite;
   text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
     0 0 200px #0072ff;
@@ -171,11 +171,5 @@ input{
   margin-top: 15px;
 
  }
- #linkedIn,
-#insta,
-#github,
-#teli {
-  border-radius: 100px;
-}
 
 }
