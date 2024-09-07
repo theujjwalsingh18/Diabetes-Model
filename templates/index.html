@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction Model</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div class="login">
+      <marquee direction="right" scrollamount="30">Diabetes Prediction Center <span class="owner">@theujjwalsinghh </marquee>
+        <form id="data" action="{{url_for('predict')}}" method="post">
+            <div id='box' class="data_box">
+                <input type="text" id='ip1' name="Pregnancies" placeholder="Pregnancies (0 for None)" required>
+                <input type="text" id='ip2' name="Glucose" placeholder="Glucose" required>
+                <input type="text" id='ip3' name="blood_pressure" placeholder="Blood Pressure (mm Hg)" required>
+                <input type="text" id='ip4' name="skin_thickness" placeholder="Skin Thickness (mm)" required>
+                <input type="text" id='ip5' name="insulin" placeholder="Insulin (mu U/ml)" required>
+                <input type="text" id='ip6' name="bmi" placeholder="BMI (kg/m^2)" required>
+                <input type="text" id='ip7' name="diabetes_pedigree_function" placeholder="Diabetes Pedigree Function" required>
+                <input type="number" id='ip8' name="age" placeholder="Age" required>
+                <button class="btn" type="submit">Predict</button>
+            </div>
+        </form>
+        <div class="predict" id="popbox">
+          <div class="popup">
+              <h1>Model has been successfully predicted</h1>
+              <p>according to given data of a person</p>
+              <h4>the person has <span id="result" class="modelres">Test</span></h4>
+              <button type="button" onclick="closePopup()">OK</button>
+          </div>
+      </div>
+</div>
+    <div class="footer">
+        <p style="color:white;">Follow for more projects</p>
+        <div class="logo">
+            <a href="https://www.linkedin.com/in/theujjwalsingh18/" target="_blank">
+            <i class="bi bi-linkedin" id="linkedIn"></i></a>
+
+            <a href="https://www.instagram.com/theujjwalsingh18" target="_blank">
+            <i class="bi bi-instagram" id="insta"></i></a>
+
+            <a href="https://github.com/theujjwalsingh18/" target="_blank">
+            <i class="bi bi-github" id="github"></i></a>
+
+            <a href="https://t.me/theujjwalsingh18" target="_blank">
+            <i class="bi bi-telegram" id="teli"></i></a>
+        </div>
+    </div>
+</body>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>
