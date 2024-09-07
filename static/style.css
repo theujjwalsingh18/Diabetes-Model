@@ -164,8 +164,12 @@ input{
 
 @media only screen and (max-width: 600px) {
  .predict{
-  height: 50vh;
+  height: 85vh;
   width: 75vw;
+ }
+ .popup button{
+  margin-top: 15px;
+
  }
 
 }
