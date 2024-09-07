@@ -11,13 +11,13 @@
       <marquee direction="right" scrollamount="30">Diabetes Prediction Center <span class="owner">@theujjwalsinghh </marquee>
         <form id="data" action="{{url_for('predict')}}" method="post">
             <div id='box' class="data_box">
-                <input type="text" id='ip1' name="Pregnancies" placeholder="Pregnancies (0 for None)" required>
-                <input type="text" id='ip2' name="Glucose" placeholder="Glucose" required>
-                <input type="text" id='ip3' name="blood_pressure" placeholder="Blood Pressure (mm Hg)" required>
-                <input type="text" id='ip4' name="skin_thickness" placeholder="Skin Thickness (mm)" required>
-                <input type="text" id='ip5' name="insulin" placeholder="Insulin (mu U/ml)" required>
-                <input type="text" id='ip6' name="bmi" placeholder="BMI (kg/m^2)" required>
-                <input type="text" id='ip7' name="diabetes_pedigree_function" placeholder="Diabetes Pedigree Function" required>
+                <input type="number" id='ip1' name="Pregnancies" placeholder="Pregnancies (0 for None)" required>
+                <input type="number" id='ip2' name="Glucose" placeholder="Glucose" required>
+                <input type="number" id='ip3' name="blood_pressure" placeholder="Blood Pressure (mm Hg)" required>
+                <input type="number" id='ip4' name="skin_thickness" placeholder="Skin Thickness (mm)" required>
+                <input type="number" id='ip5' name="insulin" placeholder="Insulin (mu U/ml)" required>
+                <input type="number" id='ip6' name="bmi" placeholder="BMI (kg/m^2)" required>
+                <input type="number" id='ip7' name="diabetes_pedigree_function" placeholder="Diabetes Pedigree Function" required>
                 <input type="number" id='ip8' name="age" placeholder="Age" required>
                 <button class="btn" type="submit">Predict</button>
             </div>
